@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import React, { FC } from 'react'
 import CourseCard from '@/components/CourseCard/CourseCard'
 import { Course } from '../model/types/types'
 import { Skeleton } from '@/shared/ui/Skeleton/Skeleton'

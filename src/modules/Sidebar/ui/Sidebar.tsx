@@ -1,4 +1,4 @@
-import { FC, memo } from "react"
+import React, { FC, memo } from "react"
 import { classNames } from "@/shared/lib/classNames/classNames"
 import { Skeleton } from "@/shared/ui/Skeleton/Skeleton"
 import cls from "./Sidebar.module.scss"

@@ -1,0 +1,36 @@
+.Skeleton {
+  width: 100%;
+  height: auto;
+  position: relative;
+  box-shadow: 0 2px 5px 0 #c0c0c0;
+  background: #e9e9e9;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -150px;
+    top: 0;
+    height: 100%;
+    width: 80%;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-image: linear-gradient(to right, transparent 0%, #ffffff 50%, transparent 100%);
+    background-repeat: no-repeat;
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+// #454545 50%
+// #1b1b1b

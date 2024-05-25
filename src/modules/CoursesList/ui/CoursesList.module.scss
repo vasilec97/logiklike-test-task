@@ -1,0 +1,20 @@
+.CoursesList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.skeleton {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+
+  .card {
+    width: calc(33.33333% - 12px);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+}

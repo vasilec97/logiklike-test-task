@@ -1,0 +1,37 @@
+.Sidebar {
+  flex-shrink: 0;
+  width: var(--sidebar-width);
+  height: min-content;
+  padding: 12px;
+  border: 1px solid #CFCFE4;
+  border-radius: 18px;
+
+  .item {
+    line-height: 1;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color .15s linear;
+
+    &:hover {
+      background-color: #c5fcd2;
+    }
+
+    &.active {
+      background-color: #5FBF77;
+      color: var(--secondary-text-color);
+    }
+  }
+}
+
+.skeleton {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: var(--sidebar-width);
+  height: min-content;
+  padding: 12px;
+  border-radius: 18px;
+}

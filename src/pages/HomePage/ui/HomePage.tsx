@@ -1,4 +1,3 @@
-import React from 'react'
 import { useHomePage } from "../model/hooks/useHomePage"
 import { Sidebar, SidebarSkeleton } from "@/modules/Sidebar"
 import { CoursesList, CoursesListSkeleton } from "@/modules/CoursesList"

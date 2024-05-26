@@ -1,7 +1,8 @@
-import React, { FC, memo } from "react"
+import { FC, memo } from "react"
 import { classNames } from "@/shared/lib/classNames/classNames"
 import { Skeleton } from "@/shared/ui/Skeleton/Skeleton"
 import cls from "./Sidebar.module.scss"
+import { useMediaQuery } from "@/shared/lib/hooks/useMediaQuery/useMediaQuery"
 
 type SidebarProps = {
   items: Record<string, string>
@@ -36,11 +37,18 @@ export const Sidebar: FC<SidebarProps> = memo(({ items, activeValue, onValueChan
 })
 
 export const SidebarSkeleton = () => {
+  const mobile = useMediaQuery('(max-width: 769px)')
+
   return (
     <div className={cls.skeleton}>
-      {Array.from({ length: 7 }, (_, idx) => (
-        <Skeleton key={idx} width="100%" height="36px" border="18px" />
-      ))}
+      {!mobile 
+        ? Array.from({ length: 7 }, (_, idx) => (
+          <Skeleton key={idx} width="100%" height="36px" border="18px" />
+        ))
+        : Array.from({ length: 8 }, (_, idx) => (
+          <Skeleton key={idx} width="calc(33% - 5.33333px)" height="24px" border="12px" />  
+        ))
+      }
     </div>
   )
 }

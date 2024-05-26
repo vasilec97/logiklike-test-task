@@ -3,6 +3,10 @@
   border-radius: 18px;
   box-shadow: 0 10px 13px -4px rgba(35, 35, 95, 0.19);
 
+  @media (max-width: 769px) {
+    width: calc(50% - 6px);
+  }
+
   .imageField {
     height: 162px;
     display: flex;
@@ -28,5 +32,9 @@
     font-weight: 800;
     line-height: 1;
     padding: 12px 18px 18px;
+
+    @media (max-width: 769px) {
+      font-size: 14px;
+    }
   }
 }

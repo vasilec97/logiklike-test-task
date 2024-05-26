@@ -4,6 +4,10 @@
   font-size: 18px;
   color: var(--primary-text-color);
   padding: 24px;
+
+  @media (max-width: 769px) {
+    font-size: 14px;
+  }
 }
 
 .app-container {
@@ -11,3 +15,4 @@
   width: 100%;
   margin: 0 auto;
 }
+

@@ -23,6 +23,16 @@
       color: var(--secondary-text-color);
     }
   }
+
+  @media (max-width: 769px) {
+    width: fit-content;
+
+    .items {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
 }
 
 .skeleton {
@@ -34,4 +44,11 @@
   height: min-content;
   padding: 12px;
   border-radius: 18px;
+
+  @media (max-width: 769px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+  }
 }

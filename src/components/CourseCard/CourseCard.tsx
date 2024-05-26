@@ -1,4 +1,4 @@
-import React, { CSSProperties, FC, memo } from 'react'
+import { CSSProperties, FC, memo } from 'react'
 import cls from './CourseCard.module.scss'
 
 type CourseCardProps = {
